@@ -1,14 +1,19 @@
+<!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Triple W | Creación de Sitios Web y Diseño de Medios</title>
     <meta name="description" content="Especialidad en creación de sitios web, diseño de medios, branding y consultoría digital. Transformamos tu presencia online con Triple W.">
+    
+    <!-- Scripts -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;900&family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <style>
         :root {
@@ -23,6 +28,12 @@
             overflow-x: hidden;
             cursor: default;
         }
+        
+        /* Font utility classes */
+        .font-roboto { font-family: 'Roboto', sans-serif !important; }
+        .font-montserrat { font-family: 'Montserrat', sans-serif !important; }
+        .font-playfair { font-family: 'Playfair Display', serif !important; }
+
         /* Custom Scrollbar */
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: #09090b; }
@@ -134,23 +145,11 @@
         }
     </style>
 
-    <link id="all-fonts-link-font-roboto" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap">
-    <style id="all-fonts-style-font-roboto">.font-roboto { font-family: 'Roboto', sans-serif !important; }</style>
-    <link id="all-fonts-link-font-montserrat" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap">
-    <style id="all-fonts-style-font-montserrat">.font-montserrat { font-family: 'Montserrat', sans-serif !important; }</style>
-    <link id="all-fonts-link-font-playfair" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&display=swap">
-    <style id="all-fonts-style-font-playfair">.font-playfair { font-family: 'Playfair Display', serif !important; }</style>
-
     <script>
         tailwind.config = {
             theme: { extend: {} },
             plugins: [
                 function({ addUtilities }) {
-                    const rotateXUtilities = {};
-                    const rotateYUtilities = {};
-                    const rotateZUtilities = {};
-                    const rotateValues = [0, 5, 10, 15, 20, 30, 45, 75];
-                    // (Simplified utility generation for preview stability)
                     const perspectiveUtilities = {
                         ".perspective-none": { perspective: "none" },
                         ".perspective-dramatic": { perspective: "100px" },
@@ -546,7 +545,7 @@
             <h2 class="reveal-base anim-blur md:text-5xl text-4xl font-semibold tracking-tight font-montserrat mb-6">Vamos a crear algo increíble.</h2>
             <p class="reveal-base anim-slide-up delay-100 text-zinc-400 max-w-xl mr-auto mb-10 ml-auto">Contáctanos para conversar sobre cómo Triple W puede ayudar a que tu empresa crezca en el entorno digital.</p>
             <div class="reveal-base anim-pop delay-200">
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Triplewstudio@gmail.com" target="_blank" rel="noopener noreferrer" class="interactive-target shiny-cta inline-flex items-center justify-center text-base font-bold text-white rounded-full pt-4 pr-8 pb-4 pl-8 group">
+                <a href="https://wa.me/5492984596435?text=%C2%A1Hola!%20%F0%9F%98%84%20Quiero%20llevar%20mi%20proyecto%20al%20siguiente%20nivel%20y%20estoy%20buscando%20crear%20una%20p%C3%A1gina%20web%20profesional%20que%20atraiga%20clientes%20%F0%9F%92%BB%20%C2%BFPodr%C3%ADas%20pasarme%20un%20presupuesto%20y%20contarme%20qu%C3%A9%20incluye,%20tiempos%20y%20formas%20de%20pago?%20%F0%9F%93%8A%20%C2%A1Quedo%20atento!%20%F0%9F%99%8C" target="_blank" rel="noopener noreferrer" class="interactive-target shiny-cta inline-flex items-center justify-center text-base font-bold text-white rounded-full pt-4 pr-8 pb-4 pl-8 group">
                     Solicitar Presupuesto
                 </a>
             </div>
